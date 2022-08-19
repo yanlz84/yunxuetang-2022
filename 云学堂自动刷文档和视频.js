@@ -195,7 +195,7 @@
     function detectionComplete() {
         const percentage = $('#ScheduleText').text();
         console.log('进度百分比: ' + percentage);
-        if (percentage == '80%') {
+        if (Number(percentage.slice(0,2)) >= 80) {
             completedStudy()
         }
 
