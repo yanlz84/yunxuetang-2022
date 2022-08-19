@@ -195,6 +195,10 @@
     function detectionComplete() {
         const percentage = $('#ScheduleText').text();
         console.log('进度百分比: ' + percentage);
+        if (percentage == '80%') {
+            completedStudy()
+        }
+
         if (percentage == '100%') {
             //返回上一级
             console.log("返回上一级");
