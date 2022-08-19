@@ -65,7 +65,7 @@
         }
 
         let i = 0;
-        $("div[class='mt9']").each(function (index, item) {
+        $("div[pull-right lh35 w-150']").each(function (index, item) {
                 //const text = $("div[class='mt9']").children(":contains('0')").text();
                 const text = $(item).children("span[class='font-size-12 text-grey']").eq(1).text()
                 //const text = $(item).eq(2).children("div[class='pull-right']").children("div[class='mt9']").children("span[class='font-size-12 text-grey']").eq(1).text();
@@ -74,7 +74,7 @@
                     console.log('点击这个未播放完成的');
 
                     window.setTimeout(function () {
-                        const str = $(item).parent().parent().parent('.hand').attr('onclick') + '';
+                        const str = $(item).parent().parent('.hand').attr('onclick') + '';
                         let arr = str.split("'");
                         console.info(arr[1]);
                         window.open(arr[1], '_self');
